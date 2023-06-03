@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#353536</color>
+    <color name="white">#F9F9F9</color>
+    <color name="white_one">#E5E5E5</color>
+    <color name="yellow">#FBBC04</color>
+    <color name="black">#FF000000</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="orange">#FF9D00</color>
+    <color name="gray_text">#666666</color>
+    <color name="gray_rv_take">#353536</color>
+    <color name="gray_burger">#373737</color>
+    <color name="green">#82C446</color>
+    <color name="gray_text_rv">#838383</color>
+    <color name="dark_green">#5C9628</color>
+    <color name="yellow_btn">#FFC545</color>
+    <color name="dark_gray">#666666</color>
+    <color name="gray_around">#F0F0F0</color>
+</resources>

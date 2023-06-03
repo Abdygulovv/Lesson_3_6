@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_one"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_choose"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_address" />
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/_225_central_park_west_ny_10024_usa" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_vector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_choose">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_delivery"
+            style="@style/Base.Button"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/yellow"
+            android:drawableStart="@drawable/ic_delivery"
+            android:paddingStart="10dp"
+            android:text="@string/delivery"
+            android:textColor="@color/white"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_pickUp"
+            style="@style/Base.Button"
+            android:layout_marginHorizontal="7dp"
+            android:text="@string/pickup" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_catering"
+            style="@style/Base.Button"
+            android:text="@string/catering" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_curbside"
+            style="@style/Base.Button"
+            android:layout_marginHorizontal="7dp"
+            android:text="@string/curbside" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_buttons">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:background="@null"
+            android:hint="@string/find_store_by_name"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_filter" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_filter"
+        tools:listitem="@layout/item_history" />
+
+    <TextView
+        android:id="@+id/textViewStoreNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/_58_stores_open"
+        android:textColor="@color/gray_text_rv"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerView_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewStoreNumbers"
+        tools:listitem="@layout/item_shop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

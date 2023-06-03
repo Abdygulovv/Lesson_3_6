@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lesson_3_6</string>
+    <string name="takeaways">Takeaways</string>
+    <string name="_58_stores_open">58 Stores Open</string>
+    <string name="find_store_by_name">Find store by name</string>
+    <string name="curbside">Curbside</string>
+    <string name="catering">Catering</string>
+    <string name="pickup">Pickup</string>
+    <string name="delivery">Delivery</string>
+    <string name="_225_central_park_west_ny_10024_usa">225 Central Park West, NY 10024, USA</string>
+    <string name="_15_20_min">15-20 min</string>
+    <string name="_10">$10</string>
+    <string name="minimum">Minimum:</string>
+    <string name="free">FREE</string>
+    <string name="_4_6">4.6</string>
+</resources>
